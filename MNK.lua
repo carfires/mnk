@@ -78,7 +78,7 @@ function get_sets()
 	
 	sets.JA.Boost = { }
 	
-	sets.JA.Dodge = {,}
+	sets.JA.Dodge = { }
 	
 	sets.JA.Impetus = {body="Bhikku Cyclas +1"}
 	
