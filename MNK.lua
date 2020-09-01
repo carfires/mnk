@@ -53,7 +53,7 @@ function get_sets()
 
 	
 	
-	--Weaponskill Sets--
+		--Weaponskill Sets--
 	sets.WS = {}
 	
 	sets.WS.VictorySmite = { }
@@ -84,6 +84,13 @@ function get_sets()
 	
 	sets.JA.Mantra = {}
 	
+		--Fast Cast--
+	
+	sets.FC = {}
+	
+	sets.FC.precast = { }
+	
+	
 	
 	
 	
@@ -97,6 +104,10 @@ end
 
 function precast(spell)
 	
+	
+	if spell.action_type == 'Magic' then
+		equip(sets.FC.precast)
+	end
 	
 	if spell.english == 'Victory Smite' then
 		equip(sets.WS.VictorySmite)
